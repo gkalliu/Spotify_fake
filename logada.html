@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalliu - Music</title>
+
+  <!-- Ícones -->
+  <script src="https://kit.fontawesome.com/6fa123eb69.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <link rel="stylesheet" href="logada.css">
+</head>
+
+<body>
+
+
+  <div class="cabecalho">
+    <div class="nav-logo">
+      <i class="fa-brands fa-spotify"></i>  
+    </div>
+    <div class="search-bar">
+    
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="O que você quer ouvir?"><i class="fa-solid fa-layer-group"></i>
+    </div>
+    <div id="no-results" style="display:none; padding:20px; font-size:18px;">
+  Nenhum resultado encontrado 🎵
+</div>
+
+    <nav class="menu-links">
+      <ul>
+        <li><a href="#"><i class="fa-solid fa-arrow-down"></i> Instalar aplicativo</a></li>
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-people-group"></i>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <nav class="sidebar">
+      <div class="nav-library">
+        <p>Sua Biblioteca</p>
+        <div class="actions">
+    <button>+ Criar</button>
+    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+  </div>
+      </div>
+
+<div class="nav-playlist">
+  <div class="carousel-wrapper">
+
+    <div class="carousel">
+      <button>Playlists</button>
+      <button>Artistas</button>
+      <button>Álbuns</button>
+      <button>Podcast</button>
+      <button>Novidades</button>
+      <button>Funk</button>
+      <button>Rap</button>
+      <button>Rock</button>
+      <button>Pop</button>
+      <button>Eletrônica</button>
+    </div>
+
+  </div>
+
+  <p>
+        <i class="fa-solid fa-magnifying-glass"></i>
+Recentes <i class="fa-solid fa-layer-group"></i></p>
+  <section class="menu-lateral">
+    <div class="musicas-salvas">
+      <h2>Músicas Curtidas</h2>
+      <div id="playlist-grid" class="musicas-grid"></div>
+    </div>
+    <div class="musicas-grid"></div>
+    <div class="Artistfavorito1-grid"></div>
+    <div class="Artistfavorito2-grid"></div>
+    <div class="Artistfavorito3-grid"></div>
+    <div class="Artistfavorito4-grid"></div>
+    <div class="Playlist1-grid"></div>
+    <div class="Playlist2-grid"></div>
+    <div class="Playlist3-grid"></div>
+
+  </section>
+
+
+
+
+</div>
+
+    </nav>
+    <main>
+<div class="nav-playlist">
+  <div class="carousel-wrapper">
+        <button>Tudo</button>
+        <button>Músicas</button>
+        <button>Podcast</button>
+</div>
+</div>
+
+      <section class="content">
+        <h2>Músicas em alta</h2>
+        <a class="more" href="#">Mostrar tudo</a>
+        <div class="artists-grid"></div>
+
+        <h2>Albuns Populares</h2>
+        <a class="more" href="#">Mostrar tudo</a>
+        <div class="album-grid"></div>
+
+        <h2>Estações de Rádio Populares</h2>
+        <a class="more" href="#">Mostrar tudo</a>
+        <div class="radio-grid"></div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Empregos</a></li>
+              <li><a href="#">For the Record</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Comunidades</h4>
+            <ul>
+              <li><a href="#">Para Artistas</a></li>
+              <li><a href="#">Desenvolvedores</a></li>
+              <li><a href="#">Publicidade</a></li>
+              <li><a href="#">Investidores</a></li>
+              <li><a href="#">Fornecedores</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Links úteis</h4>
+            <ul>
+              <li><a href="#">Suporte</a></li>
+              <li><a href="#">Aplicativo móvel grátis</a></li>
+              <li><a href="#">Popular por país</a></li>
+              <li><a href="#">Importar suas músicas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Planos</h4>
+            <ul>
+              <li><a href="#">Premium Individual</a></li>
+              <li><a href="#">Premium Duo</a></li>
+              <li><a href="#">Premium Família</a></li>
+              <li><a href="#">Premium Universitário</a></li>
+              <li><a href="#">Free</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </footer>
+
+    </main>
+  </div>
+  <div class="music-player">
+
+    <div class="player-info">
+      <img id="cover" src="../_img/rap_metal.jpg" alt="cover">
+      <div>
+        <p id="music-title">Rap Metal</p>
+        <p id="music-artist">Kalliu</p>
+      </div>
+    </div>
+
+  
+<div class="player-center"></div>
+    <div class="player-controls">
+      <button id="shuffle"><i class="fa-solid fa-shuffle"></i></button>
+      <button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+      <button id="play"><i class="fa-solid fa-circle-play"></i></button>
+      <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+      <button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+    </div>
+
+    <div class="player-progress">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0" min="0" step="1">
+      <span id="duration">0:00</span>
+    </div>
+
+    <i class="fa-solid fa-computer"></i>
+   <div class="player-volume">
+   <i class="fa-solid fa-volume-high"></i>
+   <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+   </div>
+    
+    <audio id="audio" src="../_music/rap_metal.mp3"></audio>
+
+  </div>
+ </div>
+  <!-- JS -->
+<script src="player.js"></script>
+<script src="logada.js"></script>
+
+</body>
+</html>
